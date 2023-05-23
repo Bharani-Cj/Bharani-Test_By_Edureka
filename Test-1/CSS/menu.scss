@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #aa4b6b91;
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #5e404a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #5f3845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header {
+  h1 {
+    color: rgba(1, 1, 101, 0.851);
+  }
+  h1::before {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+  }
+}
+.section {
+  margin: 0 !important;
+
+  article {
+    .card {
+      box-shadow: 5px 5px 20px black;
+
+      .card-body {
+        span {
+          color: rgb(21, 32, 95);
+        }
+        h5 {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 2px solid black;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
